@@ -19,7 +19,7 @@
                 class="vc-input"
                 type="text"
                 name="vc-password"
-                placeholder="Password"
+                placeholder="enter your coupon code"
                 autocomplete="off"
               />
             </span>
@@ -261,7 +261,7 @@ export default Component
   border-radius: 0;
   border-right: 1px solid var(--button-border-color);
 }
-.vc-input[type='password'] {
+.vc-input[type='text'] {
   width: 100%;
   outline: none;
   border-radius: 8px;
@@ -273,8 +273,8 @@ export default Component
   font-size: var(--font-size-m);
   transition: 0.21s ease;
 }
-.vc-input[type='password']:hover,
-.vc-input[type='password']:focus {
+.vc-input[type='text']:hover,
+.vc-input[type='text']:focus {
   background-color: var(--input-background-color-hover);
 }
 
