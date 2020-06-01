@@ -17,7 +17,7 @@
                 v-model="password"
                 @keyup.13="e => handleClickButton(e, true)"
                 class="vc-input"
-                type="password"
+                type="text"
                 name="vc-password"
                 placeholder="Password"
                 autocomplete="off"
