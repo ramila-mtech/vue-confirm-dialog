@@ -1,15 +1,16 @@
 {
   "name": "vue-confirm-dialog",
-  "description": "simple action confirm",
+  "description": "simple action confirm - modified",
   "version": "1.0.2",
-  "author": "Onur Aslan <aslanon.tr@gmail.com>",
+  "author": "Ramila <ramila@mtechlanka.com>",
   "private": false,
   "main": "dist/index.js",
   "scripts": {
     "build:base": "cross-env NODE_ENV=production webpack --config webpack.config.js --progress --hide-modules",
     "build:ssr": "cross-env NODE_ENV=production webpack --config webpack.config.ssr.js --progress --hide-modules",
     "build": "npm run build:base && npm run build:ssr",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "vue": "^2.6.10"
@@ -66,7 +67,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aslanon/vue-confirm.git"
+    "url": "git+https://github.com/ramila-mtech/vue-confirm-dialog.git"
   },
   "keywords": [
     "vue",
@@ -77,7 +78,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aslanon/vue-confirm/issues"
+    "url": "https://github.com/ramila-mtech/vue-confirm-dialog/issues"
   },
-  "homepage": "https://github.com/aslanon/vue-confirm#readme"
+  "homepage": "https://github.com/ramila-mtech/vue-confirm-dialog#readme"
 }
