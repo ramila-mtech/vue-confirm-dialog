@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     showConfirm(item) {
-      this.$confirm({
+      this.$confirmT({
         title: 'Confirm',
         message: `Are you sure? ${item.text} will be remove?`,
         button: {

@@ -37,7 +37,7 @@ export default {
       events.$emit('close')
     }
 
-    Vue.prototype.$confirm = confirm
-    Vue['$confirm'] = confirm
+    Vue.prototype.$confirmT = confirm
+    Vue['$confirmT'] = confirm
   }
 }

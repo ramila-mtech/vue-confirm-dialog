@@ -50,7 +50,7 @@ In any of functions :
 ```js
 methods: {
     handleClick(){
-      this.$confirm(
+      this.$confirmT(
         {
           message: `Are you sure?`,
           button: {
@@ -72,7 +72,7 @@ methods: {
   }
 ```
 
-If you want to use in \*.js file (e.g Vuex Store) before import Vue and after use Vue.\$confirm.
+If you want to use in \*.js file (e.g Vuex Store) before import Vue and after use Vue.\$confirmT.
 
 ```js
 import Vue from 'vue'
@@ -82,7 +82,7 @@ export default {
   state: {},
   actions: {
     logout({ commit }) {
-      Vue.$confirm({
+      Vue.$confirmT({
         title: 'Are you sure?',
         message: 'Are you sure you want to logout?',
         button: {
@@ -103,7 +103,7 @@ export default {
 If you want to password confirm, "auth" key is must be true.
 
 ```js
-this.$confirm({
+this.$confirmT({
   auth: true,
   message: 'foo',
   button: {
@@ -132,7 +132,7 @@ If you want to use only for information and you want of see one button in dialog
 ```js
 methods: {
     handleClick(){
-      this.$confirm(
+      this.$confirmT(
         {
           title: 'Information',
           message: 'This content has been removed',
