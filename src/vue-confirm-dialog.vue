@@ -38,7 +38,6 @@
 
             <button
               v-if="dialog.button.yes"
-              :disabled="dialog.auth ? !password : false"
               @click.stop="e => handleClickButton(e, true)"
               class="vc-btn"
             >
